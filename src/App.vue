@@ -18,23 +18,4 @@ import SlideControl from './components/SlideControl.vue';
   gap: 10px;
   justify-items: center;
 }
-
-button {
-  background-color: lightblue;
-  border: none;
-  color: white;
-  padding: 15px 30px;
-  margin: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 2rem;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 50%;
-}
-
-h1 {
-  color: lightblue;
-  font-size: 3em;
-}
 </style>
