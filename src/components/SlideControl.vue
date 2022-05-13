@@ -19,9 +19,6 @@
     {id: 'img-09', name: 'Image 9'},
     {id: 'img-10', name: 'Image 10'},
   ]
-
-  // initialize empty variable to store the image id to be sent via ably message
-  let imageId = ''
   
   onMounted(() => {
     client.connection.on('connected',function(){
@@ -29,12 +26,10 @@
     })
   })
   
-  // function to store image id in the above variable, then publish it via ably message
+  // function to publish the image id via ably message
   function selectImage(id){
-    imageId = id
-    channel.publish('image selected', imageId)
+    channel.publish('image selected', id)
   }
-    
 
 </script>
 
